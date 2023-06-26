@@ -1,0 +1,155 @@
+body
+{
+    font-family : "cascadia code" ;
+    margin: 0px ; 
+}
+
+.container
+{
+    display : grid ;
+    grid-template-columns: 1fr ;
+}
+
+.nav_wrap
+{
+    display: flex ;
+    justify-content : space-between ;
+    padding : 38px ;
+} 
+
+.left_side
+{
+    display : flex ;
+} 
+
+.nav_wrap > .left_side > div{
+    margin-right : 20px ;
+    font-size : 0.9em ;
+    text-transform : uppercase ;
+}
+
+.nav_link_wrap
+{
+    height : 22px ;
+    border-bottom : 1px solid transparent ;
+    transition : border-bottom 0.5s ;
+}
+
+.nav_link_wrap a
+{
+    color : #8a8a8a ;
+    text-decoration : none ;
+    transition : color 0.5s ;
+}
+
+.nav_link_wrap:hover
+{
+    border-bottom : 1px solid black ;
+}
+
+.nav_link_wrap a:hover
+{
+    font-weight : 800 ;
+    color : black ;
+}
+
+.active_nav
+{
+    border-bottom : 1px solid black ;
+}
+
+.active_nav a
+{
+    color : black !important ;
+}
+
+.portfolio_items_wrap
+{
+    display : grid ;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.item_wrap
+{
+    position : relative ;
+}
+
+.item_img_back
+{
+    transition: 1s ;
+    height : 350px ;
+    width : 100% ;
+    background-size : cover ;
+    background-position : center ;
+    background-repeat : no-repeat ;
+}
+
+.img_text_wrap
+{
+    position : absolute ;
+    top : 0;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items: center ;
+    height : 100% ;
+    text-align : center ;
+    padding-left : 100px ;
+    padding-right: 100px ;
+}
+
+.logo_wrap img
+{
+    width: 40%;
+    margin-bottom:20px ;
+}
+
+.img_text_wrap .subtitle
+{
+    transition: 1s ;
+    font-weight: 600 ;
+    color : transparent ;
+}
+.img_text_wrap:hover .subtitle
+{
+    font-weight : 600 ;
+    color : black ;
+}
+
+.img_opacity
+{
+    filter: opacity(60%) ;
+}
+
+.about_intro
+{
+    display : grid ;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.profile
+{
+    height : 600px ;
+    width : 70% ;
+    background-size : cover ;
+    background-position : center ;
+    background-repeat : no-repeat ;
+    margin-left : 120px ;
+    
+}
+
+
+.right_side > .brand
+{
+    font-family: "Smooch";
+    font-size: 25px;
+    font-weight: 400 ;
+    border-bottom : 1px solid black ;
+    
+}
+.about-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
